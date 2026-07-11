@@ -10,9 +10,9 @@ This package (`arth2o/auth-profile`) is a lightweight, self-contained token-base
 graph TD
     Client[API Client] -->|POST /login| Router
     Client -->|GET /profile| Middleware[CustomTokenAuth Middleware]
-    Router --> AuthController[AuthController@login]
+    Router --> AuthController["AuthController@login"]
     Middleware -->|Decrypts/Validates SHA-256| DB[(Database: users table)]
-    Middleware -->|Success: Sets User Context| ProfileController[ProfileController@show]
+    Middleware -->|Success: Sets User Context| ProfileController["ProfileController@show"]
 ```
 
 ### 1. Database Schema
