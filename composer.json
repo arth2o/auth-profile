@@ -1,0 +1,57 @@
+{
+    "name": "arth2o/auth-profile",
+    "description": "A lightweight, secure token-based authentication and profile API package for Laravel 13.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "auth",
+        "token",
+        "api",
+        "profile",
+        "authentication"
+    ],
+    "authors": [
+        {
+            "name": "Arth2o",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0",
+        "orchestra/testbench": "^11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arth2o\\AuthProfile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arth2o\\AuthProfile\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arth2o\\AuthProfile\\AuthProfileServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

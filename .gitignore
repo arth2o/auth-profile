@@ -1,0 +1,28 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing & Coverage
+.phpunit.result.cache
+.pest.result.cache
+/coverage/
+/.phpunit.cache/
+
+# Build artifacts
+*.phar
